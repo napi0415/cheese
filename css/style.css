@@ -1,0 +1,609 @@
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body{
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+	width: 960px;
+	
+	
+}
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+
+	
+  
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+
+
+.tittle{
+
+	height: 400px;
+background: url(../img/mainbg.png);
+background-size: cover;
+background-position: center;
+display: flex; 
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+}
+.title_box{
+	font-size: 48px;
+	
+	
+	color: white;
+}
+.subtitle_box{
+	font-size: 36px;
+	
+	color: white;
+	margin-top: 40px;
+}
+
+
+
+/* ナビメニュー */
+
+
+
+
+.navigation{
+	display: flex;
+}
+.logo_area{
+	width: 30%;
+	background: #fafafa;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.logo{width: 70%;
+	height: 70%; 
+	
+	
+	
+	
+	/* width: 100%;
+	background: #fafafa;
+	height: 80px; */
+}
+.wrapper{
+	background: #fafafa;
+	height: 80px;
+	border-bottom: 1px;
+	border-color: #efefef;
+    width: 70%;
+display: flex;
+	justify-content: center;
+align-items: center;
+	
+}
+
+
+
+.nav_list{
+display: flex;
+
+
+
+}
+.nav_item{
+	width: 20%;
+
+	
+	
+	text-align: center; 
+	margin: 20px;
+	
+
+	
+	
+	
+}
+.nav_item>a{
+	color: #222222;
+	font-size: 21px;
+	
+}
+
+
+.about{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.about_font{
+	color: #ffd61a;
+	font-size: 24px;
+	margin-top: 120px;
+	margin-bottom: 24px;
+}
+.about_text_second{
+	margin-top: 64px;
+	margin-bottom: 40px;
+}
+.about_bottom{
+	margin-bottom: 80px;
+}
+
+/* 画像ループ */
+.loop_wrap {
+  display: flex;
+  width: 100vw;
+  height: 200px;
+  overflow: hidden;
+}
+
+.loop_wrap img {
+  width: auto;
+  height: 100%;
+}
+
+@keyframes loop {
+  0% {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes loop2 {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
+.loop_wrap img:first-child {
+  animation: loop 50s -25s linear infinite;
+}
+
+.loop_wrap img:last-child {
+  animation: loop2 50s linear infinite;
+}
+
+/* .img_slide{
+	height: 200px;
+
+
+    
+} */
+.course{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 64px;
+	margin-bottom: 64px;
+}
+.course_head{
+	font-size: 24px;
+	color: #222222;
+}
+ 
+/*　　couse農園の画像　　*/
+
+.content_box_farm{
+	display: flex;
+    
+}
+.content_box_farm_imag{
+	width: 50%;
+}
+.content_box_farm_img_img{
+	width: 100%;
+}
+.content_box_farm_text_area{
+	width: 50%;
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+	background: #fafafa;
+}
+.content_box_farm_text{
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.content_box_farm_text_head{
+	font-size: 24px;
+	color: #222222;
+}
+.content_box_farm_text_text{
+	margin-top: 40px;
+	
+}
+
+
+/* 　　講師画像　　 */
+
+.content_box_teacher{
+	display: flex;
+}
+.content_box_teacher_text_area{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background:#fafafa;
+}
+.content_box_teacher_text{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.content_box_teacher_text_head{
+	font-size: 24px;
+	color: #222222;
+}
+.content_box_teacher_text_text{
+	margin-top: 40px;
+	
+}
+.content_box_teacher_img{
+	width: 50%;
+}
+.content_box_teacher_img_img{
+	width: 100%;
+}
+
+/* チーズテイスティング */
+.cheese_content{
+	display: flex;
+}
+.cheese_content_img_box{
+	width: 50%;
+}
+.cheese_content_img{
+	width: 100%;
+}
+.cheese_content_text_box{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: #fafafa;
+}
+.cheese_content_text_head{
+	font-size: 24px;
+	color: #222222;
+	margin-bottom: 40px;
+}
+
+/* ニュース */
+.news_box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 64px;
+	margin-bottom: 64px;
+}
+.news_head{
+font-size: 24px;
+	color: #ffd61a;	
+	margin-bottom: 24px;
+}
+
+/* ニュース内容 */
+.news_content_box{
+	display: flex;
+	justify-content: start;
+	align-items:stretch;
+	
+	
+}
+.news_content_box_box{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.news_content_1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 32px;
+	width: 33.333%;
+}
+.news_content_2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 32px;
+	width: 33.333%;
+}
+.news_content_3{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 32px;
+	width: 33.333%;
+	
+	
+	
+
+/* ここの波かっこおかしい！！ */
+
+}   
+
+/* more情報　ボタン */
+.btns{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 56px;
+	margin-bottom: 48px;
+}
+
+.btn{
+	font-size: 21px;
+	color: white;
+	height: 60px;
+    width: 300px;
+	background-color: #ffd61a;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	display: flex;
+	cursor: pointer;
+
+}
+
+/* アクセスエリア */
+.access_area{
+	width: 100%;
+	background-color: #fafafa;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	
+}
+.access_name{
+	font-size: 24px;
+	color: #222222;
+	margin-top: 64px;
+	margin-bottom: 24px;
+}
+.access_name_name{
+	margin-bottom: 64px;
+}
+
+/* Googlemapsエリア */
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13294.87781246996!2d130.3944688!3d33.5866327!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa430eb08ba4e0fa0!2sG&#39;s%20BASE%20FUKUOKA!5e0!3m2!1sja!2sjp!4v1604043128579!5m2!1sja!2sjp" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+/* 会社情報maps下 */
+
+.company{
+	width: 100%;
+	background-color:#fafafa;
+
+}
+.company_inner{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-top: 64px;
+ margin-bottom: 80px; 
+ background-color: #fafafa;
+   
+}
+dt{
+	width: 200px;
+    float: left;
+    clear: left;
+    margin-bottom: 24px;
+}
+dd{
+	
+	
+	margin-bottom: 24px;
+    margin-left: 48px;
+}
+
+  
+  
+
+/* お問い合わせ */
+.contact{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.contact_para{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 32px;
+	margin-bottom: 80px;
+}
+
+/* フォーム */
+dl{
+	margin: 0 auto;
+	width: 700px;
+	
+	
+}
+.form_item{
+display: flex;
+/* justify-content: center;
+align-items: center; */
+
+}
+dt{width: 200px;
+}
+dd{width: 500px;
+}
+input[type="text"]{
+	border: 1px solid #bfbfbf;
+	width: 328px;
+	height: 36px;
+}
+
+.radio{
+	display: flex;
+	
+	flex-direction: column;
+} 
+
+textarea{border: 1px solid #bfbfbf;
+width: 328px;
+height: 108px;
+margin-bottom: 40px;}
+
+.form_submit{
+	display: flex;
+	justify-content: center;
+	
+	margin-bottom: 100px;
+
+}
+input[type="submit"]{
+	font-size: 18px;
+	color: white;
+	height: 54px;
+	width: 298px;
+	background-color: #ffd61a;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	display: flex;
+	cursor: pointer;
+}
+.footer{
+	height: 82px;
+	background-color: #707070;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	
+}
+.copyrights{
+	font-size: 18px;
+	color: white;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	margin: 32px;
+}
+
+
+/* ページトップ */
+#page_top{
+  width: 100px;
+  height: 60px;
+  position: fixed;
+  right: 0; 
+  bottom: 0;
+  background: #ffd61a;
+  opacity: 0.6;
+}
+#page_top a{
+  position: relative;
+  display: block;
+  width: 100px;
+  height: 60px;
+  text-decoration: none;
+}
+#page_top a::before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f102';
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -25px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+#page_top a::after{
+  content: 'PAGE TOP';
+  font-size: 13px;
+  color: #fff;
+  position: absolute;
+  top: 30px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*どの部分のcssに対して
+命令をしているのかコメントを
+記載しよう！
+---------------------*/
+
+
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/
+
+
+
+
+
